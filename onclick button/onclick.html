@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onclick to button</title>
+    <link rel="stylesheet" href="sttle.css">
+</head>
+<body>
+    <div class="box">
+        <h1>Choose a color</h1>
+   
+        <button class="blue" onclick="changeColor('blue')">Blue</button>
+        <button class="red" onclick="changeColor('red')">Red</button>
+        <button class="green" onclick="changeColor('green')">Green</button>
+        <button class="yellow" onclick="changeColor('yellow')">Yellow</button>
+        <button class="purple" onclick="changeColor('purple')">Purple</button>
+        <button class="black" onclick="changeColor('black')">Black</button>
+        <button class="brown" onclick="changeColor('brown')">Brown</button>
+        <button class="pink" onclick="changeColor('pink')">Pink</button>
+        <button class="grey" onclick="changeColor('grey')">Grey</button>
+        <button class="white" onclick="changeColor('white')">White</button>
+        <button class="orange" onclick="changeColor('orange')">Orange</button>
+        <button class="silver" onclick="changeColor('silver')">Silver</button>
+        <button class="gold" onclick="changeColor('gold')">Gold</button>
+    
+    </div>
+
+    <script>
+        function changeColor(color){
+            document.querySelector('.box h1').style.color = color;
+        }
+    </script>
+</body>
+</html>
