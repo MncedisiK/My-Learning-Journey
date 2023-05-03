@@ -1,0 +1,83 @@
+body{
+    background-color: black;
+}
+.ball{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    animation: float 5s linear infinite;
+    opacity: 0.9;
+}
+#ball1 {
+    background-color: #ff0000;
+    top: 20%;
+    left: 10%;
+}
+#ball2 {
+    background-color: #ff7f00;
+    top: 50%;
+    left: 40%;
+}
+#ball3 {
+    background-color: #ffff00;
+    top: 80%;
+    left: 70%;
+}
+#ball4 {
+    background-color: aqua;
+    top: 40%;
+    left: 30%;
+}
+#ball5 {
+    background-color: rgb(11, 228, 108);
+    top: 60%;
+    left: 70%;
+}
+#ball6 {
+    background-color: rgb(166, 233, 9);
+    top: 70%;
+    left: 80%;
+}
+#ball7 {
+    background-color: rgb(247, 162, 6);
+    top: 20%;
+    left: 30%;
+}
+#disco-light {
+
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(208, 223, 8, 0.5) 0%,
+        rgba(7, 197, 7, 0.74) 50%,
+        rgba(3, 174, 226, 0.521) 100%,
+    );
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate 0.5s linear infinite;
+    box-shadow: 0 0 40px 20px #ff0000, 0 0 40px 50px #ff7f00,
+    0 0 40px 40px #ffff00, 0 0 40px 50px #00ff00, 0 0 40px 80px #0000ff,
+    0 0 40px 70px #480082, 0 0 40px 70px #8800ff, 0 0 40px 80px #0665e0, 0 0 30px 90px #0bf5ce; 
+}
+@keyframes rotate{
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+@keyframes float {
+    from{
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(50px, 50px);
+    }
+    
+}

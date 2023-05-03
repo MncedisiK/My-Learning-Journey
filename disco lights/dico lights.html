@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disco light</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ball" id="ball1"></div>
+    <div class="ball" id="ball2"></div>
+    <div class="ball" id="ball3"></div>
+    <div class="ball" id="ball4"></div>
+    <div class="ball" id="ball5"></div>
+    <div class="ball" id="ball6"></div>
+    <div class="ball" id="ball7"></div>
+    <div id="disco-light"></div>
+
+    <script>
+        function changeColor(){
+            var discolight = document.getElementById('disco-light');
+            var colors = [
+                "#ff0000",
+                "#ff7f00",
+                "#ffff00",
+                "#00ff00",
+                "#0000ff",
+                "#480082",
+                "#8800ff",
+                "#0665e0",
+                "#0bf5ce",
+            ];
+
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            discolight.style.boxShadow =
+            "0 0 20px 30px" +
+            randomColor +
+            ", 0 0  30px 40px" +
+            randomColor +
+            ", 0 0 40px 50px" + 
+            randomColor +
+            ", 0 0 50px 60px" + 
+            randomColor +
+            ", 0 0 60px 70px" +
+            randomColor +
+            ", 0 0 70px 80px" + 
+            randomColor +
+            ", 0 0 80px 90px" + 
+            randomColor +
+            ", 0 0 90px 100px" +
+            randomColor;
+        }
+
+        setInterval(changeColor, 1000);
+    </script>
+</body>
+</html>
